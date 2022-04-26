@@ -27,4 +27,5 @@ for foldername, subfolders, filenames in os.walk(p):
             p = Path(pat)
             print(f'Переводится файл {p.name} из папки {p.parent}')
             transl(pat)
-
+            
+print("Операция успешно завершено!")
