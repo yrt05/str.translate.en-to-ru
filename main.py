@@ -23,7 +23,7 @@ p = input("Введите путь к директорию с субтитрам
 for foldername, subfolders, filenames in os.walk(p):
     for filename in filenames:
         if filename[-4:] == '.srt':
-            pat = foldername + '/' + filename
+            pat = os.path.join(foldername, filename)
             p = Path(pat)
             print(f'Переводится файл {p.name}...')
             transl(pat)
