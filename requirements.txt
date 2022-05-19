@@ -1,2 +1,2 @@
-srt
+srt==3.5.2
 "googletrans==4.0.0rc1"
